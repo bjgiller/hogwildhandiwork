@@ -1,0 +1,328 @@
+===== PAGE 44 =====
+CORE PROGRAMS AND LEVEL OF SERVICE                       mind, physical recreation spaces are a key part of
+                                                         the City's core oferings, and include:
+Currently, the City has a two-pronged approach
+for evaluating recreation programming: a post-            � Playgrounds
+program/event participation survey protocol               � Open space and trails
+and a post-program/event summary. However,                � Tennis and basketball courts
+the City does not have a formalized method for            � Dog parks
+defning core programs � those that are central            � Concerts
+to the City's recreation oferings. Generally              � Natural areas
+speaking, core programs have a signifcant                 � Day camps
+impact on and a long history in the community,            � Tournament felds
+are ofered with low cost recovery/high subsidy,           � Aquatic Facility
+and similar programs or facilities are not ofered
+at comparable cost locally. With these criteria in
+
+Table 8: Recreation Structures            Current SF         Current LOS
+                                                         (Population per SF)
+Parks                                       18,290
+Recreation Structures - Open Air             13,300                 5.1
+Recreation Structures - Enclosed
+                                                                    7.1
+
+Table 9: Recreation Facilities
+
+Type                              Current SF      Current LOS      Current # of          Current LOS
+                                              (Population per SF)    Facilities  (Population per 1 facility)
+
+Basketball Courts                 28,100              3.3          17            5,526
+
+Batting Cages                     9,800               9.6          24            3,915
+
+Handball Courts                   2,500               37.6         2             46,975
+
+Horseshoes                        14,000              6.7          20            4,697
+
+Skate Park                        20,000              4.7          1             93,949
+
+Tennis Courts                     49,400              3.6          5             13,421
+
+Junior Tennis Courts                                               4             23,487
+
+Volleyball Courts                 26,400              1.9          7             18,035
+
+Playgrounds*                      -                   -            25            3,468
+
+Baseball Fields                   -                   -            18            5,219
+
+Disc Golf                         -                   -            2             46,975
+
+Soccer/ Multipurpose Fields       -                   -            15            6,263
+
+Softball Fields                   -                   -            8             11,744
+
+Lighted Fields (all sports)                                        28            2,936
+
+Non-lighted Fields (all                                            9             10,439
+sports)
+
+Pools                                                              1             93,949
+
+Splash Pads                                                        1             93,949
+
+*Current Playground LOS is 520 persons per playground when counting just the population under 15 years of age
+
+34 | Parks and Recreation Today
+
+
+===== PAGE 99 =====
+Table 14: Recreation Facilities LOS and Gap Analysis
+
+RECREATION FACILITIES � MAINTAINING THE STATUS QUO
+
+Type                         Current # of  Current LOS     Projected        Projected       Diference
+                               Facilities  (Population    LOS (2040       2040 Need at       between
+                                           per Facility)  Population       Current LOS        Need &
+                                                          per Facility)                      Current
+                                                                                 26
+Basketball Courts                    17          5,526         8,382                              9
+
+Batting Cages                      24            3,915         5,937      36                12
+
+Handball Courts                      2          46,975         71,248     3                 1
+
+Horseshoes                         20            4,697         7,125      30                10
+
+Skate Park                           1          93,949         142,496    2                 1
+
+Tennis Courts                        7           13,421        20,357     11                4
+
+Junior Tennis Courts                 4          23,487         35,624     6                 2
+
+Volleyball Courts                    5          18,790         28,499     8                 3
+
+Playgrounds*                       25            3,758         5,700      38                13
+
+Baseball Fields                      18          6,711         7,916      27                9
+
+Disc Golf                            2          46,975         71,248     3                 1
+
+Soccer/ Multipurpose                 15          6,263         9,500      23                8
+Fields
+
+Softball Fields                      8           11,744        17,812     12                4
+
+Lighted Fields (all sports)        32            3,355         4,453      49                17
+
+Non-lighted Fields (all              9          10,439         15,833     14                5
+sports)
+
+Pools                                1          93,949         142,496    2                 1
+
+Splash Pads                          1          93,949         142,496    2                 1
+
+*LOS is 520 persons per playground when counting just the population under 15 years of age
+ Table 15: Combined Parks, Natural Resources and Cultural Afairs & Park Maintenance Budget and Stafng
+
+BUDGET & STAFFING LOS AND GAP ANALYSIS � MAINTAINING THE STATUS QUO
+
+Type                           2020      2020 LOS     Projected LOS with   Projected 2040   Diference between
+                         Benchmarking                  2040 Population    Need to Maintain    Need & Current
+
+                               Data                                           2020 LOS
+
+Operating                $5,128,993      $58.62           $35.99          $7,779,338        $2,650,345
+expenditures per
+capita
+
+FTE's per 10,000             59.2          6.8            4.2             89.8                  30.6
+population
+
+*Projected 2040 needs are based on maintaining the current LOS in Fayetteville and on a projected 2040 population of 142,496
+**These projections are not meant as recommendations
+**Projections do not account for infation or new parks or facilities.
+
+                                                                                                                           Operations, Maintenance and Funding Strategies | 89
+
+
+===== PAGE 211 =====
+Figure 12: Recreation Facilities with Square Footage Estimates LOS and Gap Analysis
+                                  Source: Fayetteville Provided Data
+
+                               Recreation Facilities (SF)
+
+Type               Current SF     Current   Projected    Projected    Difference  Notes
+                                     LOS    LOS (2040     2040 SF      between
+Basketball Courts     28,100                Population     Need if      Need &
+Batting Cages          9,800   (Population                Current       Current
+Handball Courts        2,500      per SF)    per SF)*      LOS**
+Horseshoes            14,000                                             16,303
+Skate Park            20,000   3.2          5.1          44,403
+Tennis Courts         49,400                                              5,686
+Volleyball Courts     26,400   9.2          14.5         15,486
+                                                                          1,450
+                               36.1         57.0           3,950
+                                                                          8,123
+                               6.4          10.2         22,123
+                                                                         11,604
+                               4.5          7.1          31,604
+                                                                         28,661
+                               1.8          2.9          78,061
+                                                                         15,317
+                               3.4          5.4          41,717
+
+*Projected 2040 needs are based on maintaining the current LOS in Fayetteville and on a projected 2040 population
+                                                                     of 142,496
+
+                                       **These projections are not meant as recommendations
+
+                   Figure 13: Recreation Facilities with Number of Facilities LOS and Gap Analysis
+                                                Source: Fayetteville Provided Data
+
+                               Recreation Facilities (SF)
+
+Type               Current SF     Current   Projected     Projected   Difference  Notes
+                                     LOS    LOS (2040    2040 Need     between
+Basketball Courts          7                Population    if Current    Need &    Current LOS is 520
+Batting Cages              8   (Population                              Current   persons per playground
+Handball Courts            2          per         per       LOS**                 when counting the
+Horseshoes                20                Facility) *                      4    population under 15 y.o.
+Skate Park                 1     Facility)                                   5
+Tennis Courts              8                                                 1
+Volleyball Courts          5   12,882       20,357         11               12
+                                                                             1
+Playgrounds                    11,272       17,812         13                5
+                                                                             3
+Baseball Fields                45,089       71,248         3
+Disc Golf                                                                   15
+Soccer Fields                  4,509        7,125          32
+Softball Fields                                                              8
+                               90,177       142,496        2                 1
+                                                                             9
+                               11,272       17,812         13                5
+
+                               18,035       28,499         8
+
+                   26          3,468        5,481          41
+
+                   14          6,441        10,178         22
+
+                   2           45,089       71,248         3
+
+                   15          6,012        9,500          24
+
+                   8           11,272       17,812         13
+
+*Projected 2040 needs are based on maintaining the current LOS in Fayetteville and on a projected 2040 population
+                                                                     of 142,496
+
+                                       **These projections are not meant as recommendations
+
+                                                                                                                                         12
+Program Services Inventory and Assessment (Task 1.6) Draft
+
+
+===== PAGE 280 =====
+Fayetteville Parks System Master Plan Survey                                                                                        Report of Results
+
+Table 10: Question 12 by Outreach Type                                                    Sampled                                   sample
+                                                                                                                                                      Open
+ What other comments or suggestions would you like to make about parks and recreation in
+ Fayetteville?                                                                                                                              Participation
+                                                                                                                                                          (B)
+Preservation, natural spaces, environmental causes                                         (A)
+Add more parks                                                                            16%                                                           17%
+Parking, bathrooms, trash bins, amenities, and maintenance                                12%                                                           14%
+Disc golf                                                                                 15%                                                           12%
+                                                                                                                                                        18%
+                                                                                           2%
+                                                                                                                                                            A
+Swimming - pools, splash pads, water parks                                                12%                                                             8%
+Good job, continue the good work                                                          17%                                                             5%
+
+Trails, signage                                                                               B                                                           7%
+Safety issues - homeless, camping, drugs                                                  10%                                                             8%
+
+                                                                                           4%                                                               A
+                                                                                                                                                          4%
+Transportation, access, sidewalks, safety                                                 10%
+                                                                                              B                                                           6%
+Tennis, pickleball, volleyball, soccer, baseball, softball                                                                                                4%
+Bike amenities, lanes, trails, bike park, bike safety                                      5%
+                                                                                                                                                          9%
+Tracks                                                                                     8%                                                               A
+                                                                                              B
+                                                                                                                                                          5%
+                                                                                           0%                                                             6%
+                                                                                                                                                          2%
+Indoor facilities, gym, recreation center, senior center                                  7%                                                              4%
+
+River-based, frontage, park                                                               4%                                                                A
+                                                                                                                                                          2%
+Dog parks                                                                                 4%                                                            16%
+
+Playgrounds                                                                               1%                                                          100%
+
+Skate parks                                                                               3%
+
+Other                                                                                     27%
+                                                                                              B
+
+Total                                                                                     100%
+
+*These categories were coded from the responses to the open-ended question, the full responses are available under separate cover.
+
+                                                                                                                                    Page 15
+
+
+===== PAGE 314 =====
+Fayetteville Parks System Master Plan Survey                                                                                        Report of Results
+
+Table 25: Question 12 (Address Sample)                                                                                                       Percent
+ What other comments or suggestions would you like to make about parks and recreation in Fayetteville?                                             17%
+ Good job, continue the good work                                                                                                                  16%
+ Preservation, natural spaces, environmental causes                                                                                                15%
+ Parking, bathrooms, trash bins, amenities, and maintenance                                                                                        12%
+ Swimming - pools, splash pads, water parks                                                                                                        12%
+ Add more parks                                                                                                                                    10%
+ Trails, signage                                                                                                                                   10%
+ Transportation, access, sidewalks, safety                                                                                                           8%
+ Bike amenities, lanes, trails, bike park, bike safety                                                                                               7%
+ Indoor facilities, gym, recreation center, senior center                                                                                            5%
+ Tennis, pickleball, volleyball, soccer, baseball, softball                                                                                          4%
+ Safety issues - homeless, camping, drugsF                                                                                                           4%
+ River-based, frontage, park                                                                                                                         4%
+ Dog parks                                                                                                                                           3%
+ Skate parks                                                                                                                                         2%
+ Disc golf                                                                                                                                           1%
+ Playgrounds                                                                                                                                         0%
+ Tracks                                                                                                                                            27%
+ Other
+ Total                                                                                                                                          N=281
+
+*These categories were coded from the responses to the open-ended question, the full responses are available under separate cover.
+
+                                                                                                                                    Page 49
+
+
+===== PAGE 358 =====
+Fayetteville Parks System Master Plan Survey                                                                                        Report of Results
+
+Table 48: Question 12 (Open Participation)                                                                                          Percent
+ What other comments or suggestions would you like to make about parks and recreation in Fayetteville?                                    18%
+ Disc golf                                                                                                                                17%
+ Preservation, natural spaces, environmental causes                                                                                       14%
+ Add more parks                                                                                                                           12%
+ Parking, bathrooms, trash bins, amenities, and maintenance                                                                                9%
+ Tracks                                                                                                                                    8%
+ Swimming - pools, splash pads, water parks                                                                                                8%
+ Safety issues - homeless, camping, drugs                                                                                                  7%
+ Trails, signage                                                                                                                           6%
+ Tennis, pickleball, volleyball, soccer, baseball, softball                                                                                6%
+ River-based, frontage, park                                                                                                               5%
+ Good job, continue the good work                                                                                                          5%
+ Indoor facilities, gym, recreation center, senior center                                                                                  4%
+ Bike amenities, lanes, trails, bike park, bike safety                                                                                     4%
+ Playgrounds                                                                                                                               4%
+ Transportation, access, sidewalks, safety                                                                                                 2%
+ Dog parks                                                                                                                                 2%
+ Skate parks                                                                                                                              16%
+ Other
+ Total                                                                                                                                 N=461
+
+*These categories were coded from the responses to the open-ended question, the full responses are available under separate cover.
+
+                                                                                                                                    Page 93
+
+
