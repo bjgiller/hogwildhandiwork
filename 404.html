@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hogwild Handiwork</title>
+  <script>
+    // The pickleball league app moved to its own subdomain (it still runs on the home PC).
+    // Keep old hogwildhandiwork.com/pickleball/... links working.
+    (function () {
+      var p = location.pathname;
+      if (/^\/pickleball(\/|$)/.test(p)) {
+        location.replace('https://pickleball.hogwildhandiwork.com' + (p.replace(/^\/pickleball/, '') || '/') + location.search + location.hash);
+      } else {
+        location.replace('/');
+      }
+    })();
+  </script>
+  <meta http-equiv="refresh" content="2; url=/">
+</head>
+<body style="font-family:sans-serif;background:#07111e;color:#cfe3f1;display:grid;place-items:center;min-height:100vh;margin:0">
+  <p>Page not found. Taking you to <a href="/" style="color:#7ec8eb">hogwildhandiwork.com</a>&hellip;</p>
+</body>
+</html>

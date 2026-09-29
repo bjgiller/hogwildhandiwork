@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Custom disc golf trophies, player packs, and apparel by Brady Gilleran. Handcrafted awards for your league, tournament, or club.">
+  <title>Hogwild Handiwork — Custom Disc Golf Trophies &amp; Apparel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hogwildhandiwork.com/">
+  <meta property="og:title" content="Hogwild Handiwork — Custom Disc Golf Trophies &amp; Apparel">
+  <meta property="og:description" content="Hand-crafted trophies &amp; custom apparel for your disc golf league, tournament, or club. Made by a disc golfer, for disc golfers.">
+  <meta property="og:image" content="https://hogwildhandiwork.com/images/HogwildHandiworkLogo.png">
+  <meta property="og:site_name" content="Hogwild Handiwork">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Hogwild Handiwork — Custom Disc Golf Trophies &amp; Apparel">
+  <meta name="twitter:description" content="Hand-crafted trophies &amp; custom apparel for your disc golf league, tournament, or club. Made by a disc golfer, for disc golfers.">
+  <meta name="twitter:image" content="https://hogwildhandiwork.com/images/HogwildHandiworkLogo.png">
+
+  <link rel="icon" href="/favicons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <header id="nav-header">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <div class="logo-text">
+          <span class="logo-top">HOGWILD</span>
+          <span class="logo-bottom">HANDIWORK</span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#player-packs" class="nav-link">Player Packs</a></li>
+        <li><a href="#pack-items" class="nav-link">Pack Items</a></li>
+        <li><a href="#hats" class="nav-link">Hats</a></li>
+        <li><a href="#awards" class="nav-link">Awards</a></li>
+        <li><a href="#community" class="nav-link">Community</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta">Order Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img src="/images/HogwildHandiworkLogo.png" alt="Hogwild Handiwork">
+      </div>
+      <p class="hero-subtitle">
+        Hand-crafted trophies, player packs &amp; custom apparel for your league, tournament, or club.<br>
+        Made by a disc golfer, for disc golfers.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== PLAYER PACKS ========== -->
+  <section id="player-packs" class="section-packs">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Player Packs</div>
+        <h2 class="section-title">Outfit Every Player</h2>
+        <p class="section-sub">Three bundled tiers designed to give every player at your tournament something to take home — fully customizable with your design.</p>
+      </div>
+
+      <div class="packs-grid">
+
+        <!-- Silver -->
+        <div class="pack-card pack-silver">
+          <div class="pack-tier">Silver</div>
+          <div class="pack-price">
+            <span class="pack-from">Starting at</span>
+            <strong>$10</strong>
+            <span class="pack-per">/ player</span>
+          </div>
+          <ul class="pack-items-list">
+            <li>Custom Mini for every player</li>
+            <li>Trophies for the winners</li>
+          </ul>
+          <button class="btn btn-order pack-cta" onclick="orderThis('player-pack-silver')">Get Silver Pack</button>
+        </div>
+
+        <!-- Gold (featured) -->
+        <div class="pack-card pack-gold pack-featured">
+          <div class="pack-badge">Most Popular</div>
+          <div class="pack-tier">Gold</div>
+          <div class="pack-price">
+            <span class="pack-from">Starting at</span>
+            <strong>$20</strong>
+            <span class="pack-per">/ player</span>
+          </div>
+          <ul class="pack-items-list">
+            <li>Custom Mini for every player</li>
+            <li>Custom Hat <em>or</em> Shirt</li>
+            <li>Trophies for the winners</li>
+          </ul>
+          <button class="btn btn-primary pack-cta" onclick="orderThis('player-pack-gold')">Get Gold Pack</button>
+        </div>
+
+        <!-- Platinum -->
+        <div class="pack-card pack-platinum">
+          <div class="pack-tier">Platinum</div>
+          <div class="pack-price">
+            <span class="pack-from">Starting at</span>
+            <strong>$40</strong>
+            <span class="pack-per">/ player</span>
+          </div>
+          <ul class="pack-items-list">
+            <li>Custom Mini for every player</li>
+            <li>Custom Hat</li>
+            <li>Custom Shirt</li>
+            <li>Custom Bag Tag</li>
+            <li>Trophies for the winners</li>
+          </ul>
+          <button class="btn btn-order pack-cta" onclick="orderThis('player-pack-platinum')">Get Platinum Pack</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PLAYER PACK ITEMS ========== -->
+  <section id="pack-items" class="section-products section-alt">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Pack Items</div>
+        <h2 class="section-title">Player Pack Items</h2>
+        <p class="section-sub">Order any of these individually or mix &amp; match them into your own custom pack.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card" data-product="bag-tags">
+          <div class="product-carousel" data-product="bag-tags">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127991;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Bag Tags</h3>
+            <p class="product-desc">Custom single or double-sided bag tags with optional rope attachment. Great for league play, tournaments, or club merchandise.</p>
+            <div class="product-details">
+              <span class="detail-tag">Single-sided</span>
+              <span class="detail-tag">Double-sided</span>
+              <span class="detail-tag">Rope available</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">From <strong>$3</strong><span>/tag</span> <em class="product-note">&nbsp;(min. 25)</em></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('bag-tags')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="custom-minis">
+          <div class="product-carousel" data-product="custom-minis">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127967;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Custom Minis &amp; Coasters</h3>
+            <p class="product-desc">Custom mini discs and coasters crafted from wood or acrylic. Perfect as tournament prizes, bag prizes, or unique club swag.</p>
+            <div class="product-details">
+              <span class="detail-tag">Wood</span>
+              <span class="detail-tag">Acrylic</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$5</strong><span>/mini</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('custom-minis')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="custom-tshirts">
+          <div class="product-carousel" data-product="custom-tshirts">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#128085;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Custom Shirts</h3>
+            <p class="product-desc">Custom disc golf tees with your design, club logo, or tournament branding. Contact us for current availability and pricing.</p>
+            <div class="product-footer">
+              <div class="product-price"><strong>Contact for pricing</strong></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('custom-tshirts')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="custom-hats">
+          <div class="product-carousel" data-product="custom-hats">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#129346;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Custom Hats</h3>
+            <p class="product-desc">High-quality performance hats with custom leather, acrylic, UV-printed, or embroidered patches. Special club and organization pricing available.</p>
+            <div class="product-details">
+              <span class="detail-tag">Leather patches</span>
+              <span class="detail-tag">Acrylic patches</span>
+              <span class="detail-tag">UV Print</span>
+              <span class="detail-tag">Embroidered</span>
+            </div>
+            <div class="pricing-tiers">
+              <div class="tier">
+                <span class="tier-qty">25+ hats</span>
+                <span class="tier-price">$25 each</span>
+              </div>
+              <div class="tier-sep"></div>
+              <div class="tier">
+                <span class="tier-qty">50+ hats</span>
+                <span class="tier-price">$22 each</span>
+              </div>
+              <div class="tier-sep"></div>
+              <div class="tier">
+                <span class="tier-qty">100+ hats</span>
+                <span class="tier-price">$20 each</span>
+              </div>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$25</strong><span>/hat</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('custom-hats')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CUSTOM HATS ========== -->
+  <section id="hats" class="section-hats">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Custom Hats</div>
+        <h2 class="section-title">Build Your Custom Hat</h2>
+        <p class="section-sub">Choose your style and colorway, then pick a Heritage Leatherette patch to match. Brady handles the custom cutting and pressing.</p>
+      </div>
+
+      <!-- Style Tabs -->
+      <div class="hat-tabs">
+        <button class="hat-tab hat-tab-active" data-panel="5-panel">5-Panel</button>
+        <button class="hat-tab" data-panel="6-panel">6-Panel</button>
+      </div>
+
+      <!-- 5-Panel -->
+      <div class="hat-panel" id="hat-panel-5-panel">
+        <p class="hat-panel-desc">Mid-profile, water-resistant snap-back with lasered mesh panel for adhesive patches. Adjustable snap enclosure, fits 7–7¾.</p>
+        <div class="hat-colors-grid">
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #5C3D2E 50%)"></div>
+            <span class="swatch-label">Sand / Walnut</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #6B7C48 50%)"></div>
+            <span class="swatch-label">Sand / Olive</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #3B3F8C 50%)"></div>
+            <span class="swatch-label">Sand / Indigo</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #3B3F8C 50%)"></div>
+            <span class="swatch-label">Charcoal / Indigo</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #7A1C2E 50%)"></div>
+            <span class="swatch-label">Charcoal / Maroon</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Charcoal / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #F0F0F0 50%)"></div>
+            <span class="swatch-label">Charcoal / White</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #6B7C48 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Olive / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #1B4FA8 50%, #F0F0F0 50%)"></div>
+            <span class="swatch-label">Cobalt Blue / White</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #1C1C1C 50%, #4A4A4A 50%)"></div>
+            <span class="swatch-label">Black / Charcoal</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Sand / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #F0F0F0 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">White / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #1A2B52 50%)"></div>
+            <span class="swatch-label">Sand / Navy</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch hat-swatch-realtree"></div>
+            <span class="swatch-label">Realtree&#8482; / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6-Panel -->
+      <div class="hat-panel hat-panel-hidden" id="hat-panel-6-panel">
+        <p class="hat-panel-desc">Mid-profile, water-resistant snap-back with lasered mesh panel for adhesive patches. Adjustable snap enclosure, fits 7–7¾.</p>
+        <div class="hat-colors-grid">
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Charcoal / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #4A4A4A 50%, #F0F0F0 50%)"></div>
+            <span class="swatch-label">Charcoal / White</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: #1C1C1C; opacity: 0.4"></div>
+            <span class="swatch-label">Black / Black</span>
+            <span class="swatch-sold-out">Unavailable</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #6B7C48 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Olive / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #1A2B52 50%, #C68642 50%)"></div>
+            <span class="swatch-label">Navy / Caramel</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: #1A2B52; opacity: 0.4"></div>
+            <span class="swatch-label">Navy / Navy</span>
+            <span class="swatch-sold-out">Unavailable</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">Sand / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #C9AA72 50%, #1A2B52 50%)"></div>
+            <span class="swatch-label">Sand / Navy</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch" style="background: linear-gradient(135deg, #F0F0F0 50%, #1C1C1C 50%)"></div>
+            <span class="swatch-label">White / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+          <div class="hat-color-card">
+            <div class="hat-swatch hat-swatch-realtree"></div>
+            <span class="swatch-label">Realtree&#8482; / Black</span>
+            <span class="swatch-ar">AR Compatible</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Heritage Leatherette -->
+      <div class="leather-section">
+        <h3 class="leather-title">Heritage Leatherette Patches</h3>
+        <p class="leather-desc">Pair your hat with a custom-cut Heritage Leatherette patch from Lonestar's Premium Durra-Bull line — laser-friendly and made to hold up. Click any patch to preview it larger.</p>
+        <div class="hat-photos-grid">
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-buckskin-durra-bull-premium-leatherette-sheets-12x24-196106.png?width=400" alt="Buckskin Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Buckskin</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-walnut-durra-bull-premium-leatherette-sheets-12x24-421960.png?width=400" alt="Walnut Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Walnut</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-rawhide-durra-bull-premium-leatherette-sheets-12x24-770393.png?width=400" alt="Rawhide Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Rawhide</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-flint-durra-bull-premium-leatherette-sheets-12x24-813601.png?width=400" alt="Flint Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Flint</span></div>
+          </div>
+          <div class="hat-photo-card unavailable">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-charcoal-durra-bull-premium-leatherette-sheets-12x24-887766.png?width=400" alt="Charcoal Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Charcoal</span><span class="swatch-sold-out">Sold Out</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-black-black-durra-bull-premium-leatherette-sheets-12x24-623352.png?width=400" alt="Black / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Black / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-bright-white-black-durra-bull-premium-leatherette-sheets-12x24-107217.png?width=400" alt="Bright White / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Bright White / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-glow-in-the-dark-durra-bull-premium-leatherette-sheets-12x24-828943.png?width=400" alt="Glow-in-the-Dark Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Glow-in-the-Dark</span></div>
+          </div>
+          <div class="hat-photo-card unavailable">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-olive-black-durra-bull-premium-leatherette-sheets-12x24-533019.png?width=400" alt="Olive / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Olive / Black</span><span class="swatch-sold-out">Sold Out</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-sand-black-durra-bull-premium-leatherette-sheets-12x24-822019.png?width=400" alt="Sand / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Sand / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-black-silver-durra-bull-premium-leatherette-sheets-12x24-331416.png?width=400" alt="Black / Silver Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Black / Silver</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-primrose-black-durra-bull-premium-leatherette-sheets-12x24-818374.png?width=400" alt="Primrose / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Primrose / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-ruby-black-durra-bull-premium-leatherettesheets-12x24-528757.png?width=400" alt="Ruby / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Ruby / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-indigo-durra-bull-premium-leatherette-sheets-12x24-961671.png?width=400" alt="Indigo Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Indigo</span></div>
+          </div>
+          <div class="hat-photo-card unavailable">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-black-copper-durra-bull-premium-leatherette-sheets-12x24-692463.png?width=400" alt="Black / Copper Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Black / Copper</span><span class="swatch-sold-out">Sold Out</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-black-gold-durra-bull-premium-leatherette-sheets-12x24-877259.png?width=400" alt="Black / Gold Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Black / Gold</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-saddle-tan-black-durra-bull-premium-leatherette-sheets-12x24-7679007.jpg?width=400" alt="Saddle Tan / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Saddle Tan / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-orange-black-durra-bull-premium-leatherette-sheets-12x24-308807.png?width=400" alt="Orange / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Orange / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-yellow-black-durra-bull-premium-leatherette-sheets-12x24-471613.png?width=400" alt="Yellow / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Yellow / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-violet-black-durra-bull-premium-leatherette-sheets-12x24-313056.png?width=400" alt="Violet / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Violet / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-seafoam-green-black-durra-bull-premium-leatherette-sheets-12x24-307407.png?width=400" alt="Seafoam Green / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Seafoam Green / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-maroon-black-durra-bull-premium-leatherette-sheets-12x24-719751.png?width=400" alt="Maroon / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Maroon / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-sky-blue-black-durra-bull-premium-leatherette-sheets-12x24-503042.png?width=400" alt="Sky Blue / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Sky Blue / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-eggshell-black-durra-bull-premium-leatherette-sheets-12x24-749116.png?width=400" alt="Eggshell / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Eggshell / Black</span></div>
+          </div>
+          <div class="hat-photo-card">
+            <div class="hat-photo-wrap"><img class="hat-photo-img" src="https://lonestaradhesive.com/cdn/shop/files/heritage-collection-kelly-green-black-durra-bull-premium-leatherette-sheets-12x24-257216.png?width=400" alt="Kelly Green / Black Heritage Leatherette" loading="lazy"></div>
+            <div class="hat-photo-info"><span class="hat-photo-name">Kelly Green / Black</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hats-cta">
+        <p class="hats-cta-note">See a combo you like? Mention the hat style, hat color, and leatherette choice in your order request.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+          <button class="btn btn-primary btn-lg" onclick="orderThis('custom-hats')">Order Custom Hats</button>
+          <a href="/hats.html" class="btn btn-outline btn-lg">Full Hat Gallery &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========== CUSTOM AWARDS ========== -->
+  <section id="awards" class="section-products">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Awards</div>
+        <h2 class="section-title">Custom Awards</h2>
+        <p class="section-sub">Perfect for tournaments, leagues, and special events. Each piece is crafted to order.</p>
+      </div>
+
+      <div class="products-grid">
+
+        <div class="product-card" data-product="3-stage-acrylic">
+          <div class="product-carousel" data-product="3-stage-acrylic">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127942;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">3 Stage Acrylic Trophy</h3>
+            <p class="product-desc">Three pieces of acrylic bolted together into a striking, self-standing display. A bold, modern award with a unique layered look.</p>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$25</strong><span>/trophy</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('3-stage-acrylic')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="sublimation-trophies">
+          <div class="product-carousel" data-product="sublimation-trophies">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127775;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Full Color Sublimation Trophies</h3>
+            <p class="product-desc">Vibrant, full-color sublimation printing delivers photo-quality graphics and custom designs directly onto the trophy surface.</p>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$25</strong><span>/trophy</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('sublimation-trophies')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="nightlight-trophies">
+          <div class="product-carousel" data-product="nightlight-trophies">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#128161;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Night-Light Trophies</h3>
+            <p class="product-desc">Clear acrylic in a wood or black base that lights up in different colors. A showstopper award that glows as bright as your game.</p>
+            <div class="product-details">
+              <span class="detail-tag">Wood base</span>
+              <span class="detail-tag">Black base</span>
+              <span class="detail-tag">Color-changing LEDs</span>
+            </div>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$20</strong><span>/trophy</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('nightlight-trophies')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="wooden-full-color">
+          <div class="product-carousel" data-product="wooden-full-color">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#129717;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Wooden Full Color Trophies</h3>
+            <p class="product-desc">Full-color printing on premium wood for a warm, natural look combined with vibrant graphics. A classic award with a modern twist.</p>
+            <div class="product-footer">
+              <div class="product-price">Starting at <strong>$40</strong><span>/trophy</span></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('wooden-full-color')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="wooden-offset-acrylic">
+          <div class="product-carousel" data-product="wooden-offset-acrylic">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127885;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Wooden Offset Acrylic Trophies</h3>
+            <p class="product-desc">A wooden base paired with an offset acrylic panel creates a distinctive layered aesthetic. Great for a premium, handcrafted feel.</p>
+            <div class="product-footer">
+              <div class="product-price"><strong>Contact for pricing</strong></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('wooden-offset-acrylic')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="3d-printed">
+          <div class="product-carousel" data-product="3d-printed">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#129717;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">3D Printed Trophies</h3>
+            <p class="product-desc">Custom 3D printed trophies and awards for any event. Fully unique shapes and designs — if you can dream it, we can print it.</p>
+            <div class="product-footer">
+              <div class="product-price"><strong>Contact for pricing</strong></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('3d-printed')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-product="custom-medals">
+          <div class="product-carousel" data-product="custom-medals">
+            <div class="carousel-track"></div>
+            <div class="carousel-placeholder"><div class="product-image-bg">&#127941;</div></div>
+            <button class="carousel-btn carousel-prev" aria-label="Previous photo">&#8249;</button>
+            <button class="carousel-btn carousel-next" aria-label="Next photo">&#8250;</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="product-content">
+            <h3 class="product-name">Custom Winner Medals</h3>
+            <p class="product-desc">Custom medals for tournament winners and top finishers. A lasting keepsake that goes beyond the standard trophy.</p>
+            <div class="product-footer">
+              <div class="product-price"><strong>Contact for pricing</strong></div>
+              <button class="btn btn-sm btn-order" onclick="orderThis('custom-medals')">Order This</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY US ========== -->
+  <section class="section-why">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Hogwild Handiwork?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-item">
+          <div class="why-icon">&#127919;</div>
+          <h3>Built by a Disc Golfer</h3>
+          <p>Brady plays the sport too — every product is designed with the disc golf community in mind.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#9997;&#65039;</div>
+          <h3>Handcrafted Quality</h3>
+          <p>Every item is made with care. No mass production — just quality craftsmanship on each order.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#127912;</div>
+          <h3>Fully Custom</h3>
+          <p>Your logo, your colors, your vision. We can bring any design to life across all our products.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-icon">&#128230;</div>
+          <h3>Bulk Friendly</h3>
+          <p>Running a tournament or outfitting your club? We offer bulk pricing on most products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMMUNITY ========== -->
+  <section id="community" class="section-community">
+    <div class="container">
+      <div class="community-content">
+        <div class="community-text">
+          <div class="section-tag">Community</div>
+          <h2 class="section-title">Join Us on Discord</h2>
+          <p class="section-sub">Got questions about a product? Want to see what's on the bench? Drop into the server to chat with Brady, share photos of your league's gear, and hang out with other disc golfers.</p>
+          <div class="community-actions">
+            <a href="https://discord.gg/dr7YTbcB" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+              <span class="discord-icon" aria-hidden="true">&#128172;</span>
+              Join the Discord
+            </a>
+          </div>
+        </div>
+        <div class="community-widget">
+          <iframe src="https://discord.com/widget?id=1418294790184894659&theme=dark"
+                  width="350" height="420"
+                  allowtransparency="true"
+                  frameborder="0"
+                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+                  title="Hogwild Handiwork Discord">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ORDER FORM ========== -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">Order</div>
+        <h2 class="section-title">Place an Order</h2>
+        <p class="section-sub">Tell us what you need and Brady will get back to you with pricing, timeline, and design options.</p>
+      </div>
+
+      <form id="order-form" class="order-form" novalidate>
+
+        <div class="form-section">
+          <h3 class="form-section-title">Your Contact Info</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="optional">(optional)</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" autocomplete="tel">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3 class="form-section-title">Event Details</h3>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="event">Event / Tournament Name <span class="optional">(optional)</span></label>
+              <input type="text" id="event" name="event" placeholder="e.g. Spring Open 2026">
+            </div>
+            <div class="form-group">
+              <label for="event-date">Event Date <span class="optional">(optional)</span></label>
+              <input type="date" id="event-date" name="eventDate">
+            </div>
+            <div class="form-group">
+              <label for="quantity">Approximate Quantity <span class="optional">(optional)</span></label>
+              <input type="number" id="quantity" name="quantity" min="1" placeholder="How many do you need?">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3 class="form-section-title">Player Packs</h3>
+          <div class="checkbox-grid">
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="player-pack-silver">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Silver Player Pack</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="player-pack-gold">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Gold Player Pack</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="player-pack-platinum">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Platinum Player Pack</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3 class="form-section-title">Individual Products</h3>
+          <div class="checkbox-grid">
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="bag-tags">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Bag Tags</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="custom-minis">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Custom Minis / Coasters</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="custom-tshirts">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Custom Shirts</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="custom-hats">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Custom Hats</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="3-stage-acrylic">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">3 Stage Acrylic Trophy</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="sublimation-trophies">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Full Color Sublimation Trophies</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="nightlight-trophies">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Night-Light Trophies</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="wooden-full-color">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Wooden Full Color Trophies</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="wooden-offset-acrylic">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Wooden Offset Acrylic Trophies</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="3d-printed">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">3D Printed Trophies</span>
+            </label>
+            <label class="checkbox-item">
+              <input type="checkbox" name="products" value="custom-medals">
+              <span class="checkbox-custom"></span>
+              <span class="checkbox-label">Custom Winner Medals</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3 class="form-section-title">Design Details</h3>
+          <div class="form-group">
+            <label for="message">Tell us about your design <span class="optional">(optional)</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="Describe your design, colors, logos, any specific requirements or ideas..."></textarea>
+          </div>
+        </div>
+
+        <!-- Honeypot — hidden from humans, bots fill it in -->
+        <div class="visually-hidden" aria-hidden="true">
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="form-submit-wrap">
+          <button type="submit" class="btn btn-primary btn-lg btn-submit" id="submit-btn">
+            Send Order Request
+          </button>
+          <p class="form-note">Brady will respond within 1–2 business days with pricing and next steps.</p>
+        </div>
+
+        <div id="form-status" class="form-status" role="alert" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="/images/HogwildHandiworkLogo.png" alt="Hogwild Handiwork">
+          </div>
+          <p>Custom disc golf trophies, player packs &amp; apparel<br>by Brady Gilleran.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Products">
+          <h4>Products</h4>
+          <a href="#player-packs">Player Packs</a>
+          <a href="#pack-items">Pack Items</a>
+          <a href="#awards">Custom Awards</a>
+        </nav>
+        <nav class="footer-nav" aria-label="Site">
+          <h4>Site</h4>
+          <a href="#home">Home</a>
+          <a href="#community">Community</a>
+          <a href="https://discord.gg/dr7YTbcB" target="_blank" rel="noopener">Discord</a>
+          <a href="#contact">Order Now</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hogwild Handiwork by Brady Gilleran. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Online Players Meeting for the 20th Annual Northshore Invitational — check-in, scoring, schedule, and payout for tournament day in Fayetteville, AR.">
+  <title>Players Meeting — 20th Annual Northshore Invitational</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hogwildhandiwork.com/northshore20">
+  <meta property="og:title" content="Players Meeting — 20th Annual Northshore Invitational">
+  <meta property="og:description" content="Everything you need for tournament day: mandatory check-in, scoring, schedule, and payout.">
+  <meta property="og:image" content="https://hogwildhandiwork.com/images/HogwildHandiworkLogo.png">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicons/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <style>
+    /* ============ Northshore Players Meeting — page-specific ============ */
+    .ns-wrap { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
+
+    .ns-hero {
+      padding: 7rem 0 2.5rem;
+      text-align: center;
+      background:
+        radial-gradient(60% 120% at 50% 0%, rgba(77,158,207,0.16), transparent 70%),
+        var(--bg);
+    }
+    .ns-hero .section-tag { margin-bottom: 1.25rem; }
+    .ns-hero-logo {
+      display: block;
+      width: min(230px, 62vw);
+      height: auto;
+      margin: 0 auto 1.5rem;
+      filter: drop-shadow(0 8px 28px rgba(0,0,0,0.5));
+    }
+    .ns-hero h1 {
+      font-family: var(--font-head);
+      font-weight: 900;
+      font-size: clamp(1.9rem, 5.5vw, 3rem);
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+    }
+    .ns-hero .ns-sub {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-top: 0.9rem;
+    }
+    .ns-hero .ns-sub strong { color: var(--blue-light); font-weight: 600; }
+
+    /* Mandatory check-in banner */
+    .ns-alert {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+      background: rgba(34,197,94,0.08);
+      border: 1px solid rgba(34,197,94,0.35);
+      border-left: 4px solid var(--green);
+      border-radius: var(--radius-sm);
+      padding: 1.1rem 1.25rem;
+      margin: 2rem auto 0;
+      text-align: left;
+    }
+    .ns-alert .ns-alert-icon {
+      font-family: var(--font-head);
+      font-weight: 900;
+      color: var(--green);
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+    .ns-alert p { margin: 0; font-size: 0.98rem; }
+    .ns-alert strong { color: var(--text); }
+
+    /* Section blocks */
+    .ns-section { padding: 2.25rem 0; border-top: 1px solid var(--border); }
+    .ns-section:first-of-type { border-top: none; }
+    .ns-section h2 {
+      font-family: var(--font-head);
+      font-weight: 800;
+      font-size: 1.35rem;
+      margin-bottom: 1.1rem;
+    }
+    .ns-section h2 .ns-num {
+      color: var(--blue);
+      margin-right: 0.5rem;
+      font-weight: 900;
+    }
+    .ns-section p + p { margin-top: 0.85rem; }
+    .ns-section a.ns-inline { color: var(--blue-light); text-decoration: underline; }
+    .ns-note { margin-top: 1.1rem; color: var(--text-muted); font-size: 0.9rem; }
+
+    /* Sponsors */
+    .ns-sponsors { text-align: center; }
+    .ns-sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .ns-sponsor {
+      background: var(--bg-card);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-sm);
+      padding: 1.1rem 1rem;
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.02rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      min-height: 74px;
+    }
+
+    /* Quick-facts grid */
+    .ns-facts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.85rem;
+      margin-top: 0.5rem;
+    }
+    .ns-fact {
+      background: var(--bg-card);
+      border: 1px solid var(--border-blue);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.1rem;
+    }
+    .ns-fact .ns-fact-label {
+      font-family: var(--font-head);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--blue);
+    }
+    .ns-fact .ns-fact-value { margin-top: 0.35rem; font-weight: 600; color: var(--text); }
+    .ns-fact .ns-fact-value small { display: block; font-weight: 400; color: var(--text-muted); font-size: 0.82rem; margin-top: 0.15rem; }
+
+    /* Scoring code highlight */
+    .ns-code {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      color: var(--bg);
+      background: var(--blue-light);
+      padding: 0.15rem 0.6rem;
+      border-radius: 6px;
+    }
+
+    /* Green "mandatory" highlight */
+    .ns-hl {
+      display: inline-block;
+      font-weight: 800;
+      color: var(--bg);
+      background: var(--green);
+      padding: 0.05rem 0.45rem;
+      border-radius: 5px;
+    }
+
+    /* OB / hole notes */
+    .ns-holes { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+    .ns-holes li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .ns-holes li:last-child { border-bottom: none; }
+    .ns-holes .ns-hole-n {
+      font-family: var(--font-head);
+      font-weight: 800;
+      color: var(--blue-light);
+      min-width: 78px;
+      flex-shrink: 0;
+    }
+    .ns-holes .ns-hole-n small { display: block; font-weight: 400; color: var(--text-faint); font-size: 0.78rem; }
+    .ns-holes .ns-noob { color: var(--text-muted); }
+    .ns-mando-tag {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.6rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--green);
+      border: 1px solid rgba(34,197,94,0.45);
+      border-radius: 100px;
+      padding: 0.1rem 0.5rem;
+      margin-right: 0.45rem;
+      vertical-align: 1px;
+    }
+    .ns-callout {
+      background: rgba(77,158,207,0.08);
+      border: 1px solid var(--border-blue);
+      border-left: 4px solid var(--blue);
+      border-radius: var(--radius-sm);
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .ns-callout p { margin: 0; font-size: 0.98rem; }
+
+    /* Schedule list */
+    .ns-schedule { list-style: none; padding: 0; margin: 0; }
+    .ns-schedule li {
+      display: flex;
+      gap: 1rem;
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .ns-schedule li:last-child { border-bottom: none; }
+    .ns-schedule .ns-time {
+      font-family: var(--font-head);
+      font-weight: 800;
+      color: var(--blue-light);
+      min-width: 96px;
+      flex-shrink: 0;
+    }
+
+    ul.ns-list { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+    ul.ns-list li { margin: 0.4rem 0; }
+
+    /* People / honor-roll lists */
+    .ns-people {
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.9;
+    }
+    ul.ns-names {
+      list-style: none;
+      padding: 0;
+      margin: 0.85rem 0 0;
+      columns: 3 150px;
+      column-gap: 1.75rem;
+    }
+    ul.ns-names li {
+      padding: 0.32rem 0;
+      color: var(--text-muted);
+      break-inside: avoid;
+    }
+
+    /* Sign-off */
+    .ns-signoff { padding: 2.25rem 0 1rem; border-top: 1px solid var(--border); }
+    .ns-signoff .ns-cheer { font-family: var(--font-head); font-weight: 800; color: var(--blue-light); letter-spacing: 0.04em; }
+    .ns-signoff .ns-td { margin-top: 1rem; font-weight: 600; color: var(--text); }
+    .ns-signoff .ns-td small { display: block; font-weight: 400; color: var(--text-muted); }
+
+    .ns-footer {
+      text-align: center;
+      padding: 2rem 0 3rem;
+      color: var(--text-faint);
+      font-size: 0.82rem;
+    }
+    .ns-footer a { color: var(--text-muted); text-decoration: underline; }
+    .ns-footer-logo {
+      display: block;
+      width: min(200px, 55vw);
+      height: auto;
+      margin: 0 auto 1.25rem;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="ns-hero">
+    <div class="ns-wrap">
+      <img class="ns-hero-logo" src="/images/Northshore%20Disc.png" alt="20th Annual Northshore Invitational — August 29, 2026, presented by Innova & Rush Truck Centers">
+      <span class="section-tag">Online Players Meeting</span>
+      <h1>20th Annual Northshore Invitational</h1>
+      <p class="ns-sub">
+        <strong>Saturday, August 29, 2026</strong> &nbsp;·&nbsp; Northshore DGC — Fayetteville, AR
+      </p>
+
+      <div class="ns-alert">
+        <span class="ns-alert-icon">!</span>
+        <p>
+          Check-in is <span class="ns-hl">MANDATORY</span>. Check-in opens at <strong>7:45 AM</strong> and
+          closes at <strong>8:30 AM</strong> at the Pavilion near hole 17's tee pad. If you are
+          not checked in by 8:30, you may be pulled from the tournament. There is
+          <strong>no in-person players meeting</strong> — this page is your players meeting, so
+          read all of it before Saturday.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ns-wrap">
+
+    <!-- ===== WELCOME / THANK YOU ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">1.</span>Thank You for Signing Up</h2>
+      <p>
+        Thank you for signing up for the <strong>20th Annual Northshore Invitational</strong>.
+        It's going to be a long, hot day — but this will officially be the
+        <strong>largest Northshore Invitational field ever</strong>, the biggest turnout in
+        the event's history. Thanks so much to every one of you who signed up.
+      </p>
+      <p>
+        Please bring water. It's going to be a hot one — we'll have <strong>water jugs and
+        shade tents set up throughout the course</strong>, so refill and cool off whenever
+        you need to.
+      </p>
+    </section>
+
+    <!-- ===== SPONSORS ===== -->
+    <section class="ns-section ns-sponsors">
+      <h2><span class="ns-num">2.</span>Thank You to Our Sponsors</h2>
+      <div class="ns-sponsor-grid">
+        <div class="ns-sponsor">Rush Truck Centers</div>
+        <div class="ns-sponsor">The Disc Golf Dojo</div>
+        <div class="ns-sponsor">Innova Disc Golf</div>
+        <div class="ns-sponsor">NWA Ladies League</div>
+        <div class="ns-sponsor">La Huerta</div>
+        <div class="ns-sponsor">El Gym Food Truck</div>
+        <div class="ns-sponsor">Buffalo BBQ</div>
+      </div>
+      <p class="ns-note">Please support the businesses that make this event possible.</p>
+    </section>
+
+    <!-- ===== ESSENTIALS ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">3.</span>The Essentials</h2>
+      <div class="ns-facts">
+        <div class="ns-fact">
+          <div class="ns-fact-label">Check-in</div>
+          <div class="ns-fact-value">7:45 – 8:30 AM<small><span class="ns-hl">MANDATORY</span> — you may be removed from play if you miss it</small></div>
+        </div>
+        <div class="ns-fact">
+          <div class="ns-fact-label">Round 1 Tee</div>
+          <div class="ns-fact-value">9:00 AM</div>
+        </div>
+        <div class="ns-fact">
+          <div class="ns-fact-label">Scoring</div>
+          <div class="ns-fact-value">PDGA Live required<small>Code <strong>Northshore20</strong> — <span class="ns-hl">EVERYONE</span> must take score</small></div>
+        </div>
+        <div class="ns-fact">
+          <div class="ns-fact-label">Bring</div>
+          <div class="ns-fact-value">Water &amp; sunscreen<small>A full water bottle or two, and sunscreen</small></div>
+        </div>
+        <div class="ns-fact">
+          <div class="ns-fact-label">Hole Assignments</div>
+          <div class="ns-fact-value"><a class="ns-inline" href="https://www.pdga.com/tour/event/107046" target="_blank" rel="noopener">View on PDGA.com</a><small>Check your starting hole before the round — pdga.com/tour/event/107046</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SCHEDULE ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">4.</span>Day-of Schedule</h2>
+      <ul class="ns-schedule">
+        <li><span class="ns-time">7:45 AM</span><span>Check-in opens at the Pavilion near hole 17's tee pad.</span></li>
+        <li><span class="ns-time">8:30 AM</span><span>Check-in closes. All players must be checked in — mandatory.</span></li>
+        <li><span class="ns-time">9:00 AM</span><span>Round 1 begins.</span></li>
+        <li><span class="ns-time">Midday</span><span>Lunch break — Round 2 begins approximately 1 hr 15 min after Round 1 concludes.</span></li>
+        <li><span class="ns-time">After R2</span><span>Scores finalized, then trophies and payout.</span></li>
+      </ul>
+      <p class="ns-note">Reminder: there is no in-person players meeting — this page covers everything.</p>
+    </section>
+
+    <!-- ===== CHECK-IN & PLAYERS MEETING ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">5.</span>Check-In &amp; Players Meeting</h2>
+      <p>
+        Check-in is at the <strong>Pavilion near hole 17's tee pad</strong>. It opens at
+        <strong>7:45 AM</strong> and closes at <strong>8:30 AM</strong>. Every player must
+        check in — this is mandatory.
+      </p>
+      <p>
+        There is <strong>no in-person players meeting anywhere</strong> this year. This page
+        is the players meeting. Please read the whole thing before you arrive.
+      </p>
+    </section>
+
+    <!-- ===== SCORING ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">6.</span>Scoring</h2>
+      <p>
+        Keeping score on <strong>PDGA Live</strong> is <strong>required</strong>. On each
+        card, at least one player must run live scoring with the event code
+        <span class="ns-code">Northshore20</span>.
+      </p>
+      <p>
+        Run live scoring here:
+        <a class="ns-inline" href="https://www.pdga.com/apps/tournament/score/" target="_blank" rel="noopener">pdga.com/apps/tournament/score</a>
+        — enter code <strong>Northshore20</strong> to load the event.
+      </p>
+      <p>
+        We also have <strong>paper scorecards</strong> available at check-in as a backup —
+        but a live PDGA Live score must still be submitted for every group.
+      </p>
+    </section>
+
+    <!-- ===== OB / COURSE NOTES ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">7.</span>OB &amp; Course Notes</h2>
+      <p>
+        Full scores and OB are tracked on <strong>PDGA Live</strong> and summarized below. If
+        there is ever a discrepancy, <strong>PDGA Live is the official record.</strong>
+      </p>
+      <div class="ns-callout">
+        <p>
+          <strong>Round 2 basket moves:</strong> the baskets on holes
+          <strong>3, 5, 9, 11, 12, and 13</strong> will be moved during lunch for Round 2.
+          Round 1 plays the current layout positions.
+        </p>
+      </div>
+
+      <ul class="ns-holes">
+        <li><span class="ns-hole-n">Hole 1<small>223 ft</small></span><span>OB beyond the white line behind the basket and to the right. OB surrounded by water or across the creek.</span></li>
+        <li><span class="ns-hole-n">Hole 2<small>257 ft</small></span><span>OB surrounded by water in the lake.</span></li>
+        <li><span class="ns-hole-n">Hole 3<small>258 ft</small></span><span class="ns-noob">No OB.</span></li>
+        <li><span class="ns-hole-n">Hole 4<small>353 ft</small></span><span class="ns-noob">No OB.</span></li>
+        <li><span class="ns-hole-n">Hole 5<small>225 ft</small></span><span>OB surrounded by water, indicated by the white line near the basket.</span></li>
+        <li><span class="ns-hole-n">Hole 6<small>292 ft</small></span><span>OB on or across the sidewalk.</span></li>
+        <li><span class="ns-hole-n">Hole 7<small>372 ft</small></span><span class="ns-noob">No OB.</span></li>
+        <li><span class="ns-hole-n">Hole 8<small>307 ft</small></span><span>OB long, defined by the white line protecting 9's fairway (45 ft long of the basket).</span></li>
+        <li><span class="ns-hole-n">Hole 9<small>440 ft</small></span><span>OB on or across the sidewalk. OB in the tall grass left, marked with a white line. Opens up at the sewer grate. No OB right.</span></li>
+        <li><span class="ns-hole-n">Hole 10<small>292 ft</small></span><span>OB surrounded by water.</span></li>
+        <li><span class="ns-hole-n">Hole 11<small>374 ft</small></span><span>OB surrounded by water.</span></li>
+        <li><span class="ns-hole-n">Hole 12<small>297 ft</small></span><span>OB surrounded by water.</span></li>
+        <li><span class="ns-hole-n">Hole 13<small>220 ft</small></span><span><span class="ns-mando-tag">Triple Mando</span>Discs must fly below the rope and between the two wooden posts. If the mando is missed, re-tee with a 1-stroke penalty. OB surrounded by water; long defined by the white line near the basket.</span></li>
+        <li><span class="ns-hole-n">Hole 14<small>351 ft</small></span><span>OB on or across the sidewalk.</span></li>
+        <li><span class="ns-hole-n">Hole 15<small>203 ft</small></span><span><span class="ns-mando-tag">Triple Mando</span>Discs must go between the wooden fence and below the bottom-most rope of the banner. If the mando is missed, proceed to the drop zone with a 1-stroke penalty. OB on or across the sidewalk. You don't have to throw the gap on the drive — you may lay up.</span></li>
+        <li><span class="ns-hole-n">Hole 16<small>361 ft</small></span><span class="ns-noob">No OB.</span></li>
+        <li><span class="ns-hole-n">Hole 17<small>380 ft</small></span><span>OB if surrounded by water.</span></li>
+        <li><span class="ns-hole-n">Hole 18<small>343 ft</small></span><span><span class="ns-mando-tag">Mando</span>Discs must go left of the marked tree (original gap). Any shot that misses the mando must re-tee with a 1-stroke penalty. OB on or across the sidewalk.</span></li>
+      </ul>
+    </section>
+
+    <!-- ===== PAYOUT ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">8.</span>Payout</h2>
+      <p>
+        Payout will be available <strong>after Round 2</strong> for every division that is not
+        trophy-only. Payout is handled on-site by <strong>The Disc Golf Dojo</strong>.
+      </p>
+    </section>
+
+    <!-- ===== SPECIAL THANKS ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">9.</span>Special Thanks</h2>
+      <p>
+        This tournament only happens because of the people who pour their time into it. A huge
+        thank you to <strong>Darrell Bailey, Blake Bailey, Byron Vaughn, Kelly Ganzel,
+        Beck McDonagh, Andrew McDonagh, Crystal Chestnut McDonagh, Wayne Chestnut,
+        Lyla McDonagh, and Huey Heinz</strong> for all their work getting the course looking
+        absolutely amazing.
+      </p>
+      <p>
+        Thank you to the tournament directors who have put in the work to run this event over
+        the years:
+      </p>
+      <p class="ns-people">
+        Kelly Ganzel &nbsp;·&nbsp; Russel Burns &nbsp;·&nbsp; Kyle McClure &nbsp;·&nbsp;
+        Robert Harris &nbsp;·&nbsp; Evan McKee &nbsp;·&nbsp; Darrell Bailey &nbsp;·&nbsp;
+        Byron Vaughn &nbsp;·&nbsp; Ben Huss &nbsp;·&nbsp; Zachary Asbury &nbsp;·&nbsp;
+        Kevin Burdick &nbsp;·&nbsp; Blake Bailey &nbsp;·&nbsp; Brady Gilleran
+      </p>
+      <p>
+        We had Kelly Ganzel track down the original club member list. A lot of these
+        folks helped get Northshore in the ground back in <strong>2004</strong> — a big
+        shoutout to the original club members:
+      </p>
+      <ul class="ns-names">
+        <li>Darrell Bailey</li>
+        <li>Bob Harris</li>
+        <li>Kelly Ganzel</li>
+        <li>Kelly Watson</li>
+        <li>Dayson Keylor</li>
+        <li>Kyle McClure</li>
+        <li>Buck Hadlock</li>
+        <li>Colin Furrow</li>
+        <li>Barney Davis</li>
+        <li>Sean Wallace</li>
+        <li>Larry Quinones</li>
+        <li>Chuck McCallister</li>
+        <li>Lee Allen</li>
+        <li>Shane Logan</li>
+        <li>Rick Maxwell</li>
+        <li>Jeff Gabbard</li>
+        <li>Jeff Grey</li>
+        <li>Jessie Miller</li>
+        <li>Heath Whitley</li>
+        <li>Don Van Sandt</li>
+        <li>Jeff Ash</li>
+        <li>James Sipler</li>
+        <li>Matt Thulin</li>
+        <li>Blake Bailey</li>
+        <li>Eric Bailey</li>
+        <li>Chad Daigle</li>
+        <li>Danny Reaves</li>
+      </ul>
+      <p>
+        Thank you to <strong>Sign Planet</strong> for the banner, and to
+        <strong>The Disc Golf Dojo</strong> for providing equipment and running payout.
+      </p>
+      <p>
+        Thank you to our title sponsor <strong>Rush Truck Centers</strong> for providing free
+        t-shirts for all of the Pro players, <strong>Innova Discs</strong> for providing the
+        players packs, and <strong>Hogwild Handiwork</strong> for making the shirts and the trophies.
+      </p>
+      <p>
+        And thank you to <strong>La Huerta</strong> — disc golfers get <strong>10% off
+        lunch</strong> on tournament day. Stop in and refuel between rounds.
+      </p>
+      <p>See you all out there — let's make the 20th a great one.</p>
+    </section>
+
+    <!-- ===== WAXHAWS WARRIORS ===== -->
+    <section class="ns-section">
+      <h2><span class="ns-num">10.</span>Waxhaws Warriors — Sunday</h2>
+      <p>
+        A lot of you are backing it up the very next day at the
+        <strong>6th Annual Waxhaws Warriors presented by Innova</strong> — a separate PDGA
+        C-Tier run by <strong>The Disc Golf Dojo</strong>, with Kevin Burdick as TD, played
+        at <strong>Walker Park</strong> in Fayetteville on <strong>Sunday, August 30</strong>.
+        Two rounds, and the field is already full at 90 players. Thank you to everyone who
+        signed up for that one too.
+      </p>
+      <div class="ns-callout">
+        <p>
+          <strong>Kevin's reminder for Sunday:</strong> it's an <span class="ns-hl">early
+          tee time</span>. Round 1 goes off at <strong>8:30 AM</strong> at Walker Park — not
+          9:00. Check-in runs <strong>7:00–8:15 AM</strong> and is mandatory. Plan your
+          morning accordingly after a long Saturday.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SIGN-OFF ===== -->
+    <div class="ns-signoff">
+      <p>Thanks so much for signing up for the Northshore Invitational. We can't wait to see you out there — get checked in early, play smart, and have a blast.</p>
+      <p class="ns-cheer">AEA and Go Hogs,</p>
+      <p class="ns-td">
+        Brady Gilleran <small>Tournament Director</small>
+        <small>501-580-2270</small>
+        <small><a class="ns-inline" href="mailto:bjgiller@gmail.com">bjgiller@gmail.com</a></small>
+      </p>
+    </div>
+
+    <div class="ns-footer">
+      <img class="ns-footer-logo" src="/images/FDGA%20Logo.png" alt="Fayetteville Disc Golf Association">
+      <p>
+        A Fayetteville Disc Golf Association event ·
+        20th Annual Northshore Invitational<br>
+        <a href="https://www.discgolfscene.com/tournament/20th_Annual_Northshore_Invitational_2026" target="_blank" rel="noopener">Tournament page on Disc Golf Scene</a>
+        &nbsp;·&nbsp; Page by <a href="https://hogwildhandiwork.com/">Hogwild Handiwork</a>
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
