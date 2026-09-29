@@ -1,5 +1,5 @@
 // Contact form goes to the hogwild-forms Cloudflare Worker (c:/Programming/hogwild-forms).
-const FORMS_ENDPOINT = 'https://hogwild-forms.WORKERS_SUBDOMAIN.workers.dev';
+const FORMS_ENDPOINT = 'https://hogwild-forms.bandicoot3111.workers.dev';
 
 // Mobile nav toggle
 const navToggle = document.querySelector('.nav-toggle');
