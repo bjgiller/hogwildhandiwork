@@ -16,6 +16,7 @@ full map of hosting, DNS, the tunnel, and the forms Worker.)
 | `business.html` (`/business`) | Same products re-worded for schools/businesses; awards + merchandise + quote form |
 | `hats.html` (`/hats`) | Full Durra-Bull hat catalog (5/6-panel photos) + leatherette patches |
 | `404.html` | Not-found page. It **also forwards old `/pickleball/...` links** to `https://pickleball.hogwildhandiwork.com` |
+| `states.html` (`/states`) | Custom engraved mini order page for the 2026 Bill Trousdale Arkansas State Championships. Own inline form script: posts to the Worker `/order` as `custom-minis`, with engraving name, PDGA #, and delivery in the message. Photo is in `images/custom-minis/` |
 | `northshore20.html`, `northshore20.pdf` | 20th Annual Northshore Invitational players-meeting page (old design, uses `css/style.css`) |
 | `northshore.html`, `northshore.pdf` | Redirect to `/northshore20` / older PDF copy (links already sent out) |
 | `fdga/` | FDGA proposal for the City of Fayetteville (`/fdga/`). `fdga/source-docs/` holds the Parks Master Plan research behind it; read its README before editing numbers or quotes |
