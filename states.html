@@ -28,6 +28,12 @@
 		.event-facts li { display: flex; gap: 12px; align-items: baseline; }
 		.event-facts span { font-family: var(--font-mono); font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--navy-2); min-width: 64px; }
 		.event-facts b { color: var(--ink); }
+		.pay-box { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 16px; padding: 16px 18px; border-radius: 14px; background: var(--ice); }
+		#ship-field[hidden] { display: none; }
+		.pay-box p { margin: 0; }
+		.pay-math { color: var(--muted); font-size: .9rem; }
+		.pay-confirm { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-weight: 600; font-size: .95rem; cursor: pointer; }
+		.pay-confirm input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--disc); flex-shrink: 0; }
 		@media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; } }
 	</style>
 </head>
@@ -79,11 +85,11 @@
 				<div class="order-aside reveal">
 					<p class="eyebrow">Order your mini</p>
 					<h2>Get your State mini</h2>
-					<p class="lead">Tell Brady whose name goes on it and how many you want. He’ll reply with pricing and confirm the details before anything is engraved.</p>
+					<p class="lead">Tell Brady whose name goes on it, pick it up at the Dojo or have it shipped, and pay with Venmo.</p>
 					<ul>
 						<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg><span><b>Am player pack already includes one.</b> Order here for extras, a Pro mini, or one for a friend.</span></li>
-						<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Fast reply.</b> Brady responds within 1–2 business days.</span></li>
-						<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><span><b>Questions?</b> <a href="https://discord.gg/dr7YTbcB" target="_blank" rel="noopener">Message Brady on Discord</a>.</span></li>
+						<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><b>Fast reply.</b> Brady confirms your order within 1–2 business days.</span></li>
+						<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M7 15h3"/></svg><span><b>$10 per mini for pickup, $15 shipped.</b> Paid by Venmo to <b>@Brady-Gilleran</b>.</span></li>
 					</ul>
 				</div>
 				<form id="mini-form" class="form-card reveal" style="--d:.08s" novalidate>
@@ -106,18 +112,30 @@
 					<fieldset>
 						<legend>Getting it to you</legend>
 						<div class="chips">
-							<label class="chip"><input type="radio" name="delivery" value="Pick up at the tournament" checked><span>Pick up at the tournament</span></label>
-							<label class="chip"><input type="radio" name="delivery" value="Ship it to me"><span>Ship it to me</span></label>
+							<label class="chip"><input type="radio" name="delivery" value="Pickup at the Dojo" checked><span>Pickup at the Dojo · $10</span></label>
+							<label class="chip"><input type="radio" name="delivery" value="Ship it to me"><span>Ship it to me · $15</span></label>
 						</div>
+						<div class="field" id="ship-field" hidden style="margin-top:14px"><label for="f-address">Shipping address</label><textarea id="f-address" name="address" autocomplete="street-address" style="min-height:90px" placeholder="Street, city, state, ZIP"></textarea></div>
+					</fieldset>
+					<fieldset>
+						<legend>Payment</legend>
+						<div class="pay-box">
+							<p>Send <b class="pay-total">$10</b> on Venmo to <b>@Brady-Gilleran</b> <span class="pay-math">(1 × $10)</span></p>
+							<a class="btn btn-navy btn-sm" id="venmo-link" href="https://venmo.com/u/Brady-Gilleran" target="_blank" rel="noopener">Open Venmo <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+						</div>
+						<div class="fields" style="margin-top:14px">
+							<div class="field full"><label for="f-venmo">Your Venmo username</label><input id="f-venmo" name="venmo" type="text" required placeholder="@your-venmo"></div>
+						</div>
+						<label class="pay-confirm"><input type="checkbox" name="paid" required> <span>I’ve sent <b class="pay-total">$10</b> to @Brady-Gilleran on Venmo.</span></label>
 					</fieldset>
 					<fieldset>
 						<legend>Anything else</legend>
-						<div class="field"><label for="f-msg">Notes <span class="opt">(optional)</span></label><textarea id="f-msg" name="notes" placeholder="Several names for a group order, a shipping address, your division…"></textarea></div>
+						<div class="field"><label for="f-msg">Notes <span class="opt">(optional)</span></label><textarea id="f-msg" name="notes" placeholder="Several names for a group order, your division…"></textarea></div>
 					</fieldset>
 					<div class="visually-hidden" aria-hidden="true"><label>Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
 					<div class="submit-row">
 						<button class="btn btn-primary btn-lg" type="submit">Send mini order <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
-						<p>No payment now. Brady confirms pricing first.</p>
+						<p>Your mini is made once the Venmo payment comes through.</p>
 					</div>
 					<div id="form-status" class="form-status" role="status" aria-live="polite"></div>
 				</form>
@@ -164,12 +182,27 @@
 	</footer>
 	<script src="/js/site.js?v=3"></script>
 	<script>
-	/* Mini order: sent as a regular Custom Minis order request, with the engraving details in the message. */
+	/* Mini order: sent as a regular Custom Minis order request, with engraving, delivery, and Venmo payment details in the message. */
 	(function () {
 		var form = document.getElementById('mini-form');
 		var status = document.getElementById('form-status');
 		var submit = form.querySelector('[type="submit"]');
 		var submitText = submit.innerHTML;
+		var PRICES = { 'Pickup at the Dojo': 10, 'Ship it to me': 15 };
+		var shipField = document.getElementById('ship-field'), venmoLink = document.getElementById('venmo-link');
+		function qty() { return Math.max(1, parseInt(form.elements.quantity.value, 10) || 1); }
+		function price() { return PRICES[form.elements.delivery.value] || 10; }
+		function updatePay() {
+			var ship = form.elements.delivery.value === 'Ship it to me', total = qty() * price();
+			shipField.hidden = !ship;
+			form.elements.address.required = ship;
+			form.querySelectorAll('.pay-total').forEach(function (el) { el.textContent = '$' + total; });
+			form.querySelector('.pay-math').textContent = '(' + qty() + ' × $' + price() + ')';
+			venmoLink.href = 'https://venmo.com/Brady-Gilleran?txn=pay&amount=' + total + '&note=' + encodeURIComponent('Arkansas State mini x' + qty() + (ship ? ' (shipped)' : ' (Dojo pickup)'));
+		}
+		form.addEventListener('input', updatePay);
+		form.addEventListener('change', updatePay);
+		updatePay();
 		function setStatus(type, msg) { status.className = 'form-status ' + type; status.textContent = msg; status.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
 		form.addEventListener('submit', function (e) {
 			e.preventDefault();
@@ -178,27 +211,32 @@
 			var name = f.name.value.trim(), email = f.email.value.trim();
 			if (!name || !email) return setStatus('error', 'Please fill in your name and email address.');
 			if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return setStatus('error', 'Please enter a valid email address.');
-			var qty = parseInt(f.quantity.value, 10) || 1;
+			var ship = f.delivery.value === 'Ship it to me', total = qty() * price();
+			if (ship && !f.address.value.trim()) return setStatus('error', 'Please enter a shipping address.');
+			if (!f.venmo.value.trim()) return setStatus('error', 'Please enter your Venmo username so Brady can match your payment.');
+			if (!f.paid.checked) return setStatus('error', 'Please send the $' + total + ' Venmo payment to @Brady-Gilleran and check the box.');
 			var message = [
 				'Name on mini: ' + (f.engraveName.value.trim() || name),
 				'PDGA #: ' + (f.pdga.value.trim() || '(none given)'),
 				'Delivery: ' + f.delivery.value,
+				ship ? 'Ship to:\n' + f.address.value.trim() : '',
+				'Payment: $' + total + ' (' + qty() + ' × $' + price() + ') via Venmo from ' + f.venmo.value.trim() + ' (buyer says it was sent)',
 				f.notes.value.trim() ? '\nNotes:\n' + f.notes.value.trim() : ''
-			].join('\n').trim();
+			].filter(Boolean).join('\n').trim();
 			var body = {
 				name: name, email: email, phone: f.phone.value.trim(),
 				event: '43rd Annual Bill Trousdale Arkansas State Championships',
-				eventDate: '2026-10-31', quantity: String(qty),
+				eventDate: '2026-10-31', quantity: String(qty()),
 				products: ['custom-minis'], message: message, website: f.website.value
 			};
 			submit.disabled = true; submit.textContent = 'Sending…';
 			fetch('https://hogwild-forms.bandicoot3111.workers.dev/order', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
 				.then(function (r) { return r.json(); })
 				.then(function (d) {
-					if (d.success) { setStatus('success', 'Mini order sent! Brady will be in touch soon with pricing and details.'); form.reset(); }
+					if (d.success) { setStatus('success', 'Mini order sent! Brady will confirm once your Venmo payment comes through.'); form.reset(); updatePay(); }
 					else setStatus('error', d.message || 'Something went wrong. Please try again.');
 				})
-				.catch(function () { setStatus('error', 'Unable to send right now. Please check your connection and try again, or reach Brady on Discord.'); })
+				.catch(function () { setStatus('error', 'Unable to send right now. Please check your connection and try again.'); })
 				.then(function () { submit.disabled = false; submit.innerHTML = submitText; });
 		});
 	})();
