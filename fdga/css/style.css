@@ -450,8 +450,8 @@ a { color: inherit; }
 /* Kessler */
 .kessler-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   align-items: start;
 }
 
@@ -551,4 +551,20 @@ a { color: inherit; }
   .nav, .hero-cta, .nav-toggle { display: none; }
   .section, .section-alt { padding: 30px 12px; }
   .hero { padding: 40px 12px; }
+}
+
+/* Kessler map */
+.map-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.map-caption {
+  font-size: 12.5px;
+  color: #9aa39a;
+  margin-top: 8px;
+  text-align: center;
 }
