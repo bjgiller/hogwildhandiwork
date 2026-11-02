@@ -431,6 +431,7 @@ a { color: inherit; }
 }
 
 .citation-callout p:last-child { margin-bottom: 0; }
+.citation-callout .card-table { margin: 4px 0 14px; max-width: 640px; }
 
 /* Pledge callout */
 .pledge-callout {
