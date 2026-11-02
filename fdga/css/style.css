@@ -442,6 +442,8 @@ a { color: inherit; }
   margin-bottom: 8px;
 }
 
+.pledge-callout p + p { margin-top: 10px; }
+
 .pledge-callout p {
   font-size: 14px;
   color: var(--ink-soft);
