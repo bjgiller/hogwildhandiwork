@@ -143,6 +143,14 @@ a { color: inherit; }
   font-size: 14px;
 }
 
+.hero-cta-outline {
+  background: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 10px 24px;
+  margin-left: 10px;
+}
+
 /* Mission strip */
 .mission-strip {
   background: var(--bg-card);
@@ -530,6 +538,10 @@ a { color: inherit; }
 .contact-strip h2 { font-size: 24px; margin-bottom: 10px; }
 
 .contact-strip p { opacity: 0.85; font-size: 14.5px; }
+
+.contact-strip .contact-name { opacity: 1; margin-top: 18px; font-size: 16px; }
+
+.contact-strip .contact-info a { color: #fff; }
 
 /* Footer */
 .footer {
