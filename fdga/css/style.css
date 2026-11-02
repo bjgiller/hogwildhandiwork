@@ -148,7 +148,11 @@ a { color: inherit; }
   color: var(--gold);
   border: 2px solid var(--gold);
   padding: 10px 24px;
-  margin-left: 10px;
+  margin: 10px 0 0 10px;
+}
+
+@media (max-width: 480px) {
+  .hero-cta-outline { margin-left: 0; }
 }
 
 /* Mission strip */
