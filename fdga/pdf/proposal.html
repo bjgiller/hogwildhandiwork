@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<title>FDGA Partnership Proposal — Walker Park &amp; Kessler Park</title>
+<style>
+  :root {
+    --teal: #1f7f84;
+    --teal-dark: #13575b;
+    --teal-tint: #e8f3f3;
+    --gold: #f0c814;
+    --gold-ink: #a8860a;
+    --gold-tint: #fdf8e1;
+    --ink: #1b2627;
+    --ink-soft: #4a5859;
+    --rule: #d7e0e0;
+  }
+
+  @page {
+    size: Letter;
+    margin: 0.7in 0.75in 0.75in;
+    @bottom-left {
+      content: "Fayetteville Disc Golf Association  ·  Partnership Proposal";
+      font: 8pt 'Segoe UI', sans-serif;
+      color: #8a9697;
+    }
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font: 8pt 'Segoe UI', sans-serif;
+      color: #8a9697;
+    }
+  }
+  @page :first {
+    margin: 0;
+    @bottom-left { content: none; }
+    @bottom-right { content: none; }
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; line-height: 1.2; color: var(--ink); }
+  a { color: var(--teal); text-decoration: none; border-bottom: 0.5pt solid currentColor; }
+  p + p { margin-top: 8pt; }
+  strong { color: var(--ink); }
+
+  /* ---------- Cover ---------- */
+  .cover {
+    width: 8.5in;
+    height: 11in;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    break-after: page;
+    overflow: hidden;
+  }
+  .cover-top {
+    flex: 1;
+    padding: 0.9in 0.9in 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .cover-logo { width: 4.6in; margin-bottom: 0.45in; }
+  .cover-label {
+    font-size: 9pt;
+    font-weight: 700;
+    letter-spacing: 2.5pt;
+    text-transform: uppercase;
+    color: var(--teal);
+    margin-bottom: 12pt;
+  }
+  .cover h1 { font-size: 30pt; font-weight: normal; margin-bottom: 14pt; }
+  .cover-rule { width: 1.1in; height: 3pt; background: var(--gold); margin: 4pt auto 18pt; }
+  .cover-intro { font-size: 11.5pt; color: var(--ink-soft); max-width: 5.6in; }
+  .cover-figures {
+    display: flex;
+    gap: 0.25in;
+    margin-top: 0.45in;
+  }
+  .cover-figure {
+    width: 1.9in;
+    padding: 12pt 10pt;
+    border-top: 3pt solid var(--teal);
+    background: var(--teal-tint);
+  }
+  .cover-figure b {
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 18pt;
+    font-weight: normal;
+    color: var(--teal-dark);
+  }
+  .cover-figure span { font-size: 8.5pt; color: var(--ink-soft); line-height: 1.35; display: block; margin-top: 3pt; }
+  .cover-bottom {
+    background: var(--teal-dark);
+    color: #fff;
+    padding: 0.4in 0.9in;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .cover-bottom .prepared { font-size: 8pt; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--gold); margin-bottom: 4pt; }
+  .cover-bottom .names { font-family: Georgia, serif; font-size: 14pt; }
+  .cover-bottom .org { font-size: 9.5pt; color: #cfe3e3; }
+  .cover-bottom .right { text-align: right; font-size: 9.5pt; color: #cfe3e3; }
+  .cover-stripe { height: 8pt; background: var(--gold); }
+
+  /* ---------- Sections ---------- */
+  .section { break-before: page; }
+  .section.flow { break-before: auto; margin-top: 18pt; }
+  .kicker {
+    font-size: 8.5pt;
+    font-weight: 700;
+    letter-spacing: 2pt;
+    text-transform: uppercase;
+    color: var(--teal);
+  }
+  .section h2 { font-size: 20pt; font-weight: normal; margin: 3pt 0 7pt; }
+  .section-rule { width: 0.8in; height: 2.5pt; background: var(--gold); margin-bottom: 12pt; }
+  .lead { font-size: 11pt; color: var(--ink-soft); margin-bottom: 12pt; }
+  h3 { font-size: 12.5pt; margin-bottom: 4pt; }
+  .muted { color: var(--ink-soft); }
+  .avoid { break-inside: avoid; }
+
+  /* Mission */
+  .mission {
+    border-left: 3pt solid var(--gold);
+    padding: 2pt 0 2pt 14pt;
+    font-style: italic;
+    color: var(--ink-soft);
+    margin-bottom: 16pt; font-size: 10pt;
+  }
+
+  /* At a glance */
+  .glance {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12pt;
+    margin-bottom: 4pt;
+  }
+  .glance-box { padding: 12pt 14pt; border: 0.75pt solid var(--rule); border-top: 3pt solid var(--teal); }
+  .glance-box.gold { border-top-color: var(--gold); }
+  .glance-box h3 { font-size: 11pt; margin-bottom: 6pt; }
+  .glance-box ul { padding-left: 14pt; font-size: 9.5pt; color: var(--ink-soft); }
+  .glance-box li + li { margin-top: 3pt; }
+
+  /* Cost table */
+  table.costs { width: 100%; border-collapse: collapse; margin: 2pt 0 0; font-size: 10pt; }
+  .costs th {
+    text-align: left;
+    font-size: 8pt;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--teal-dark);
+    padding: 6pt 8pt;
+  }
+  .costs td { padding: 5pt 8pt; border-bottom: 0.75pt solid var(--rule); vertical-align: top; }
+  .costs td.num, .costs th.num { text-align: right; white-space: nowrap; }
+  .costs td small { display: block; color: var(--ink-soft); font-size: 8.5pt; }
+  .costs tr.total td {
+    border-bottom: none;
+    border-top: 1.5pt solid var(--teal-dark);
+    font-weight: 700;
+    font-size: 11pt;
+    background: var(--gold-tint);
+  }
+
+  /* Products */
+  .products { display: grid; grid-template-columns: 1fr 1fr; gap: 14pt; margin-bottom: 16pt; }
+  .product { display: flex; gap: 10pt; align-items: flex-start; border: 0.75pt solid var(--rule); padding: 10pt; }
+  .product img { width: 0.95in; height: 0.95in; object-fit: contain; flex-shrink: 0; }
+  .product h3 { font-size: 10.5pt; }
+  .product p { font-size: 8.8pt; color: var(--ink-soft); line-height: 1.45; }
+  .product .src { font-size: 8pt; margin-top: 5pt; }
+
+  .partner {
+    display: flex;
+    gap: 14pt;
+    align-items: center;
+    background: var(--teal-tint);
+    padding: 12pt 14pt;
+    border-left: 3pt solid var(--teal);
+  }
+  .partner img { width: 0.85in; height: 0.85in; object-fit: contain; background: #fff; border-radius: 4pt; flex-shrink: 0; }
+  .partner .label { font-size: 8pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--teal); }
+  .partner p { font-size: 9.8pt; margin-top: 2pt; }
+
+  /* Findings */
+  .finding { display: grid; grid-template-columns: 0.55in 1fr; gap: 12pt; margin-bottom: 16pt; break-inside: avoid; }
+  .finding-num {
+    font-family: Georgia, serif;
+    font-size: 17pt;
+    color: var(--teal-dark);
+    border-top: 3pt solid var(--gold);
+    padding-top: 4pt;
+    text-align: center;
+  }
+  .finding p { font-size: 10pt; color: var(--ink-soft); }
+  .exhibit { margin-top: 8pt; border: 0.75pt solid var(--rule); padding: 6pt; background: #fff; }
+  .exhibit img { display: block; width: 100%; }
+  .exhibit.narrow { width: 64%; }
+  .cite { font-size: 8pt; color: #7a8889; margin-top: 4pt; }
+
+  .quotes { background: var(--teal-tint); padding: 14pt 16pt; break-inside: avoid; }
+  .quotes .label { font-size: 8pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--teal); margin-bottom: 8pt; }
+  .quotes blockquote { font-family: Georgia, serif; font-size: 11.5pt; font-style: italic; color: var(--ink); }
+  .quotes blockquote + blockquote { margin-top: 10pt; }
+  .quotes cite { display: block; font-family: 'Segoe UI', sans-serif; font-style: normal; font-size: 8pt; color: var(--ink-soft); margin-top: 2pt; }
+
+  /* Kessler */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 18pt; margin-bottom: 14pt; }
+  .two-col p { font-size: 10pt; color: var(--ink-soft); }
+  .map { break-inside: avoid; margin-bottom: 6pt; }
+  .map img { display: block; width: 100%; border: 0.75pt solid var(--rule); }
+  .map-caption { font-size: 8.5pt; color: var(--ink-soft); margin-top: 5pt; display: flex; align-items: center; gap: 6pt; }
+  .swatch { display: inline-block; width: 10pt; height: 10pt; background: #7a1f7a; border-radius: 2pt; }
+
+  .callout {
+    border-left: 3pt solid var(--gold);
+    background: var(--gold-tint);
+    padding: 12pt 16pt;
+    margin-bottom: 12pt;
+    break-inside: avoid;
+  }
+  .callout.teal { border-left-color: var(--teal); background: var(--teal-tint); }
+  .callout .label { font-size: 8pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--gold-ink); margin-bottom: 5pt; }
+  .callout.teal .label { color: var(--teal); }
+  .callout p { font-size: 10pt; color: var(--ink-soft); }
+  .callout .exhibit { width: 88%; margin: 8pt 0; }
+
+  .stats { display: flex; gap: 10pt; margin: 8pt 0 2pt; }
+  .stat { flex: 1; background: #fff; padding: 8pt 10pt; border-top: 2.5pt solid var(--gold); }
+  .stat b { display: block; font-family: Georgia, serif; font-size: 16pt; font-weight: normal; color: var(--teal-dark); }
+  .stat span { font-size: 8pt; color: var(--ink-soft); }
+
+  /* Labor */
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12pt; }
+  .card { border: 0.75pt solid var(--rule); border-top: 3pt solid var(--teal); padding: 12pt 14pt; break-inside: avoid; }
+  .card p { font-size: 10pt; color: var(--ink-soft); }
+
+  /* Asks */
+  .asks { list-style: none; margin-bottom: 18pt; }
+  .asks li { display: grid; grid-template-columns: 0.45in 1fr; gap: 12pt; padding: 12pt 0; border-bottom: 0.75pt solid var(--rule); break-inside: avoid; }
+  .asks li:first-child { border-top: 0.75pt solid var(--rule); }
+  .ask-num {
+    width: 0.4in; height: 0.4in; border-radius: 50%;
+    background: var(--teal-dark); color: #fff;
+    font-family: Georgia, serif; font-size: 14pt;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .asks p { font-size: 10pt; color: var(--ink-soft); }
+
+  .timeline { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10pt; margin-bottom: 22pt; break-inside: avoid; }
+  .phase { background: var(--teal-tint); padding: 12pt; position: relative; }
+  .phase .p-label { font-size: 8pt; font-weight: 700; letter-spacing: 1.5pt; text-transform: uppercase; color: var(--teal); }
+  .phase h3 { font-size: 11.5pt; margin: 2pt 0 4pt; }
+  .phase p { font-size: 9pt; color: var(--ink-soft); line-height: 1.45; }
+
+  .closing {
+    background: var(--teal-dark);
+    color: #fff;
+    padding: 18pt 22pt;
+    display: flex;
+    align-items: center;
+    gap: 18pt;
+    break-inside: avoid;
+  }
+  .closing img { width: 1.6in; background: #fff; padding: 6pt; border-radius: 4pt; flex-shrink: 0; }
+  .closing h2 { color: #fff; font-size: 17pt; font-weight: normal; margin-bottom: 4pt; }
+  .closing p { color: #cfe3e3; font-size: 10pt; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="cover">
+  <div class="cover-top">
+    <img class="cover-logo" src="../images/fdga-logo.png" alt="Fayetteville Disc Golf Association">
+    <div class="cover-label">A Partnership Proposal</div>
+    <h1>Walker Park &amp; Kessler Park</h1>
+    <div class="cover-rule"></div>
+    <p class="cover-intro">
+      Through a member-funded capital campaign, FDGA has raised <strong>$18,538.94</strong> for
+      course improvements at Walker Park's Waxhaws Disc Golf Course — at no cost to the City. As a
+      next phase, we're proposing a new course at Kessler Park that reuses the Walker Park baskets
+      this upgrade replaces, built with volunteer labor.
+    </p>
+    <div class="cover-figures">
+      <div class="cover-figure"><b>$18,538.94</b><span>raised by FDGA members for Walker Park</span></div>
+      <div class="cover-figure"><b>$0</b><span>cost to the City</span></div>
+      <div class="cover-figure"><b>0</b><span>mature trees cut at Kessler</span></div>
+    </div>
+  </div>
+  <div class="cover-bottom">
+    <div>
+      <div class="prepared">Prepared for</div>
+      <div class="names">Lee Farmer &amp; Mark May</div>
+      <div class="org">City of Fayetteville</div>
+    </div>
+    <div class="right">
+      Fayetteville Disc Golf Association<br>
+      A 501(c)(3) nonprofit<br>
+      November 2026
+    </div>
+  </div>
+  <div class="cover-stripe"></div>
+</section>
+
+<!-- ============ OVERVIEW + 01 THE GIFT ============ -->
+<section class="section">
+  <div class="kicker">Overview</div>
+  <h2>The Proposal at a Glance</h2>
+  <div class="section-rule"></div>
+  <p class="mission">
+    Fayetteville Disc Golf Association is a 501(c)(3) nonprofit dedicated to growing disc golf in
+    Fayetteville — maintaining public courses, running community tournaments, and providing
+    programming for players of all skill levels. We do this work regardless of the outcome of this
+    proposal; we're asking the City to partner with us in doing it better.
+  </p>
+  <div class="glance">
+    <div class="glance-box">
+      <h3>What we're asking for</h3>
+      <ul>
+        <li><strong>Accept the gift:</strong> $18,538.94 in new baskets, hole positions, tee pads,
+          and signage for Walker Park, installed by FDGA.</li>
+        <li><strong>Land at Kessler Park</strong> to build a Gold-level course from the retired
+          Walker Park baskets.</li>
+      </ul>
+    </div>
+    <div class="glance-box gold">
+      <h3>What FDGA brings</h3>
+      <ul>
+        <li>The full $18,538.94 campaign, at zero cost to the City.</li>
+        <li>Professional course design by The Disc Golf Dojo ($1,000 per 9 holes).</li>
+        <li>Volunteer labor to clear, build, and maintain — zero mature trees cut.</li>
+        <li>Clinics, events, and cleanup days after it opens.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="section flow">
+    <div class="kicker">01 · The Gift</div>
+    <h2>FDGA's Capital Campaign for Walker Park</h2>
+    <div class="section-rule"></div>
+    <p class="lead">
+      <strong>$18,538.94</strong> raised from multiple FDGA member donations, earmarked for capital
+      improvements at Walker Park's Waxhaws Disc Golf Course — facilitated entirely through FDGA,
+      at zero cost to the City. Once installed, every new basket and sleeve is City property, just
+      like the existing baskets.
+    </p>
+
+    <table class="costs avoid">
+      <thead>
+        <tr><th>Item</th><th class="num">Qty</th><th class="num">Unit</th><th class="num">Total</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>New baskets — MVP Black Hole&reg; Portal<small>18 hole baskets plus 1 practice basket</small></td>
+          <td class="num">19</td><td class="num">$799.95</td><td class="num">$15,199.05</td>
+        </tr>
+        <tr>
+          <td>New hole positions — permanent ground sleeves<small>Hot-dipped galvanized steel</small></td>
+          <td class="num">11</td><td class="num">$39.99</td><td class="num">$439.89</td>
+        </tr>
+        <tr>
+          <td>Extended tee pads<small>Concrete work extending the existing Walker Park tee pads</small></td>
+          <td class="num">—</td><td class="num">—</td><td class="num">$2,000.00</td>
+        </tr>
+        <tr>
+          <td>New tee signs<small>Design and installation across the course</small></td>
+          <td class="num">18</td><td class="num">$50.00</td><td class="num">$900.00</td>
+        </tr>
+        <tr class="total">
+          <td>Campaign total</td><td></td><td></td><td class="num">$18,538.94</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section">
+  <div class="products">
+    <div class="product">
+      <img src="../images/gift/basket-portal.png" alt="MVP Black Hole Portal basket">
+      <div>
+        <h3>MVP Black Hole&reg; Portal</h3>
+        <p>A 4-ring, 36-chain catch system built to absorb both soft and firm putts. PDGA
+          championship approved, with a 20-year warranty against rust and corrosion. High-visibility
+          red, yellow, and orange — easier for road traffic to spot and for new players to find.</p>
+        <div class="src"><a href="https://mvpproshop.com/products/mvp-black-hole-portal">MVP Pro Shop product page</a></div>
+      </div>
+    </div>
+    <div class="product">
+      <img src="../images/gift/ground-sleeve.png" alt="Permanent ground sleeve">
+      <div>
+        <h3>Permanent Ground Sleeves</h3>
+        <p>Each sleeve lets a basket move between multiple permanent pin positions, so layouts can
+          rotate through the year — keeping the course fresh for regulars and giving FDGA more
+          flexibility for tournament layouts.</p>
+        <div class="src"><a href="https://mvpproshop.com/products/permanent-ground-sleeve-hot-dipped-galvanized">MVP Pro Shop product page</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="partner avoid">
+    <img src="../images/partners/disc-golf-dojo.jpg" alt="The Disc Golf Dojo">
+    <div>
+      <div class="label">Professional Course Design — Kessler Park</div>
+      <p>FDGA is sponsoring <strong>The Disc Golf Dojo</strong> — the same local outfit already
+        contracted by the City for disc golf programming — to professionally design the new Kessler
+        layout, at <strong>$1,000 per 9 holes</strong>, so it's built right the first time.</p>
+    </div>
+  </div>
+
+  <!-- ============ 02 MASTER PLAN ============ -->
+  <div class="section flow">
+    <div class="kicker">02 · Already in the Plan</div>
+    <h2>The City's Own Plan Already Agrees</h2>
+    <div class="section-rule"></div>
+    <p class="lead">
+      None of this is a new idea. The City's own <strong>2023 Parks System Master Plan</strong> —
+      built on years of resident survey data — already documents the need for more disc golf, in
+      the City's own numbers and in residents' own words.
+    </p>
+
+    <div class="finding">
+      <div class="finding-num">&#10003;</div>
+      <div>
+        <h3>Already a recognized partner</h3>
+        <p>FDGA is already listed in the Plan among the City's recognized community recreation
+          partner organizations — alongside groups like Fayetteville Youth Baseball and the Ozark Off
+          Road Cyclists.</p>
+        <div class="cite">Source: Master Plan <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=42">PDF p. 42</a>
+          &amp; <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=203">p. 203</a></div>
+      </div>
+    </div>
+    <div class="quotes">
+      <div class="label">In residents' own words</div>
+      <blockquote>&ldquo;Not enough disc golf courses so too crowded.&rdquo;
+        <cite>Fayetteville resident, Master Plan survey — <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=342">p. 342</a></cite>
+      </blockquote>
+      <blockquote>&ldquo;Crowded disc golf courses a problem that the disc golf community would solve
+        with their own time and effort if only given an adequate property to develop.&rdquo;
+        <cite>Fayetteville resident, Master Plan survey — <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=336">p. 336</a></cite>
+      </blockquote>
+      <p class="cite" style="margin-top:10pt">All figures from the City's adopted
+        <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023"><em>Fayetteville Parks System Master Plan and Appendices</em>, February 2023</a>; page numbers as printed in the PDF.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="finding">
+    <div class="finding-num">2→3</div>
+    <div>
+      <h3>A documented shortfall</h3>
+      <p>The Plan counts 2 disc golf courses citywide today — 1 per 46,975 residents, one of the
+        lowest-served facility types the City tracks. Its own 2040 gap analysis says Fayetteville
+        needs <strong>3</strong> just to hold today's level of service as the city grows: a
+        shortfall of at least one course, already.</p>
+      <div class="exhibit narrow"><img src="../images/plan/table-9.png" alt="Master Plan Table 9"></div>
+      <div class="cite">Source: Master Plan <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=44">Table 9, PDF p. 44</a>
+        &amp; <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=99">Table 14, p. 99</a></div>
+    </div>
+  </div>
+
+  <div class="finding">
+    <div class="finding-num">#1</div>
+    <div>
+      <h3>The most-mentioned ask</h3>
+      <p>In the Plan's open-participation survey (461 respondents), <strong>"disc golf" was the
+        single most common topic</strong> in open-ended comments on what to improve — 18%, ahead of
+        natural-space preservation, requests for more parks, and every other category.</p>
+      <div class="exhibit"><img src="../images/plan/table-48.png" alt="Master Plan Table 48"></div>
+      <div class="cite">Source: Master Plan <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=358">Table 48, PDF p. 358</a></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============ 03 KESSLER ============ -->
+<section class="section">
+  <div class="kicker">03 · The Ask</div>
+  <h2>A Gold-Level Course at Kessler Park</h2>
+  <div class="section-rule"></div>
+  <p class="lead">
+    We believe that by removing only invasive privet and honeysuckle — and cutting
+    <strong>zero mature trees</strong> — we can create a <strong>Gold-level disc golf
+    course</strong> at Kessler Park, reusing the City's existing Walker Park baskets once the
+    Waxhaws upgrade replaces them. Nothing goes to waste.
+  </p>
+
+  <div class="two-col">
+    <div>
+      <h3>Built around your plans</h3>
+      <p>FDGA has identified wooded areas of the park for the course. We don't know all of the
+        City's plans for Kessler, but we're committed to working around them — the course will be
+        laid out so that whatever the City has planned can still happen. We'd welcome the City's
+        input on where a course fits best alongside those plans.</p>
+    </div>
+    <div>
+      <h3>Good neighbors in the park</h3>
+      <p>Fairways will be routed away from trails, pavilions, the sports fields, and parking, so
+        players and other park visitors stay out of each other's way.</p>
+      <p>The <strong>purple highlighted areas</strong> on the map are the areas we'd like to use.
+        They're open to the City's feedback before anything is finalized.</p>
+    </div>
+  </div>
+
+  <div class="map">
+    <img src="../images/map/kessler-areas.jpg" alt="Aerial map of Kessler Mountain Regional Park with proposed course areas highlighted in purple">
+    <div class="map-caption"><span class="swatch"></span> Proposed course areas. Final layout to be
+      set with the City and The Disc Golf Dojo.</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="callout">
+    <div class="label">A Destination Course</div>
+    <p><strong>Great for locals, and worth the trip.</strong> A Gold-level course would be a great
+      home for Fayetteville's current players and a welcoming place for new ones to grow into the
+      sport — and it would make Kessler a course that players travel to. Visiting players and
+      tournament fields stay in Fayetteville hotels, eat in local restaurants, and bring
+      <strong>hotel tax revenue</strong> to the City along with them.</p>
+    <p><strong>And a major is already on its way.</strong> The PDGA has chosen Northwest Arkansas to
+      host the <strong>2028 PDGA Tim Selinske United States Masters Disc Golf
+      Championships</strong> — one of the sport's major championships, with Fayetteville named
+      among the host cities. A Gold-level course at Kessler would put Fayetteville in position to
+      welcome those players and the visitors who follow them, and to keep drawing events long after
+      2028. (<a href="https://www.pdga.com/news/major-announcement">PDGA announcement, Jan. 2026</a>)</p>
+  </div>
+
+  <div class="callout">
+    <div class="label">Already Proven at Kessler</div>
+    <p><strong>FDGA's Ice Bowl already brings players to Kessler Mountain.</strong> Every year, FDGA
+      sets up a temporary course at Kessler for its Ice Bowl charity tournament. A permanent course
+      would give that event, and others like it, a home.</p>
+    <div class="stats">
+      <div class="stat"><b>100+</b><span>players at the Ice Bowl each year</span></div>
+      <div class="stat"><b>$6,000+</b><span>raised every year for the last 5 years</span></div>
+      <div class="stat"><b>Everhope</b><span>formerly the NWA Children's Shelter</span></div>
+    </div>
+  </div>
+
+  <div class="callout teal">
+    <div class="label">Kessler Was Already on Residents' List</div>
+    <p>In the City's own community engagement summary for the Master Plan, Disc Golf was named among
+      the top requested uses for Kessler Mountain Regional Park specifically (14 responses,
+      <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=235">PDF p. 235</a>).</p>
+    <div class="exhibit"><img src="../images/plan/page-235-kessler.png" alt="Master Plan page 235, Kessler Mountain Regional Park responses"></div>
+    <p>Residents also asked for this siting approach: &ldquo;Building and Development of Disc Golf
+      Courses in non-flood plain areas so we can focus on ongoing development of fairways&hellip;
+      without the constant setbacks due to flooding&rdquo; (Master Plan survey,
+      <a href="https://www.fayetteville-ar.gov/DocumentCenter/View/28916/Fayetteville-Parks-System-Master-Plan-and-Appendices-February-2023#page=321">p. 321</a>).
+      That's exactly the wooded, non-floodplain site FDGA is proposing here.</p>
+  </div>
+</section>
+
+<!-- ============ 04 LABOR + 05 NEXT STEPS ============ -->
+<section class="section">
+  <div class="kicker">04 · Our Part</div>
+  <h2>Volunteer Labor</h2>
+  <div class="section-rule"></div>
+  <p class="lead">FDGA volunteers will help clear the site and build the course.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>Clearing the site</h3>
+      <p>FDGA volunteers will help clear invasive privet and honeysuckle along the Kessler fairways
+        — zero mature trees cut. We'd walk the site with City staff before any work begins.</p>
+    </div>
+    <div class="card">
+      <h3>Building the course</h3>
+      <p>FDGA will help design and build the course with The Disc Golf Dojo — pouring the concrete
+        tee pads, putting up tee signs, and installing the baskets.</p>
+    </div>
+  </div>
+
+  <div class="callout teal" style="margin-top:16pt">
+    <div class="label">After It Opens</div>
+    <p><strong>We'll help it succeed.</strong> FDGA will help onboard new players at Kessler with
+      intro clinics and course-launch events, and will keep the course clean with regular volunteer
+      cleanup days — trash pickup, invasive removal, and basket upkeep — so it's a well-cared-for
+      addition to the park, not another item on the City's list.</p>
+    <p><strong>And over the long haul.</strong> FDGA will handle routine upkeep and lead fundraising
+      for repairs and replacements as the course ages — baskets, signs, and tee pads — just as
+      we've done with this campaign for Walker Park.</p>
+  </div>
+
+</section>
+
+<section class="section">
+  <div>
+    <div class="kicker">05 · Next Steps</div>
+    <h2>What We're Asking For</h2>
+    <div class="section-rule"></div>
+    <ol class="asks">
+      <li>
+        <div class="ask-num">1</div>
+        <div>
+          <h3>Accept the gift</h3>
+          <p>FDGA's $18,538.94 capital campaign for Walker Park: 19 new baskets, 11 new hole
+            positions, extended tee pads, and new tee signage — installed by FDGA at no cost to the
+            City.</p>
+        </div>
+      </li>
+      <li>
+        <div class="ask-num">2</div>
+        <div>
+          <h3>Land to build a Gold-level course at Kessler Park</h3>
+          <p>Built by FDGA volunteers reusing the City's existing Walker Park baskets, sited around
+            the City's plans for the park, with FDGA also sponsoring a professional course designer
+            ($1,000 per 9 holes).</p>
+        </div>
+      </li>
+    </ol>
+
+    <h3 style="margin-bottom:8pt">How it would roll out</h3>
+    <div class="timeline">
+      <div class="phase">
+        <div class="p-label">Phase 1</div>
+        <h3>Walker Park</h3>
+        <p>Once the City accepts the gift, FDGA installs the new baskets, sleeves, tee pad
+          extensions, and signage, coordinated with Parks staff.</p>
+      </div>
+      <div class="phase">
+        <div class="p-label">Phase 2</div>
+        <h3>Kessler design</h3>
+        <p>The Disc Golf Dojo finalizes a layout, which goes through the City's normal review and
+          approval process before anything happens on the ground.</p>
+      </div>
+      <div class="phase">
+        <div class="p-label">Phase 3</div>
+        <h3>Kessler build</h3>
+        <p>With approval in hand, FDGA volunteers prep the site and install the retired Walker Park
+          baskets.</p>
+      </div>
+    </div>
+
+    <div class="closing">
+      <img src="../images/fdga-logo.png" alt="FDGA">
+      <div>
+        <h2>Let's talk it through</h2>
+        <p>Prepared for Lee Farmer and Mark May ahead of our meeting — happy to walk through any
+          part of this in person.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
