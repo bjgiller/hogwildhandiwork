@@ -225,7 +225,7 @@ a { color: inherit; }
   border-top: 1px dashed var(--border);
 }
 
-.card-cite a, .citation-callout a, .quote-panel blockquote cite a {
+.card-cite a, .citation-callout a, .pledge-callout a, .quote-panel blockquote cite a {
   color: var(--green);
   text-decoration: underline;
   font-weight: 600;
